@@ -30,6 +30,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, auto);
     padding: 32px;
+    justify-content: center;
 }
 
 nav {
@@ -46,7 +47,7 @@ nav {
         color: #8d5b1a;
         background-color: #feda70;
         border: 2px solid black;
-        border-radius: 10px;
+        border-radius: 12px;
         padding: 5px;
     }
 }
@@ -84,15 +85,20 @@ article img {
 
 .sutiszoveg {
     max-width:80%;
+    padding-top: 8vh;
 }
 
 table {
     max-width: 1080px;
     min-width: 150%;
-    border: 2px solid black;
 }
 
-td {
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table, td, th {
     padding: 10px;
 }
 
@@ -104,4 +110,17 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background-color: #feda70;
     color: #8d5b1a;
+}
+
+footer {
+    background-color: #8d5b1a;
+    color: #feda70;
+    justify-content: center;
+    max-width: 60vw;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 26px;
 }
