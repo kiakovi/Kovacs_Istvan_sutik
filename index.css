@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Schoolbell;
+    text-decoration: none;
 }
 
 @font-face {
@@ -33,10 +34,21 @@ section {
 
 nav {
     color: #8d5b1a;
-    background-color: #feda70;
     font-size: 20px;
     padding: 0.5rem;
     border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        color: #8d5b1a;
+        background-color: #feda70;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+    }
 }
 
 h2 {
@@ -72,4 +84,24 @@ article img {
 
 .sutiszoveg {
     max-width:80%;
+}
+
+table {
+    max-width: 1080px;
+    min-width: 150%;
+    border: 2px solid black;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    color: #feda70;
+    background-color: #8d5b1a;
+}
+
+tr:nth-child(even) {
+    background-color: #feda70;
+    color: #8d5b1a;
 }
